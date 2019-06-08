@@ -1,0 +1,19 @@
+configBucket: hack-clusters
+k8sVersion: 1.12.1
+region: us-east1
+masterzones:
+  - us-east1-b
+zones:
+  - us-east1-b
+  - us-east1-c
+  - us-east1-d
+masterType: n1-standard-1
+nodeType: n1-standard-2
+networkID: cluster1
+projectID: hackathon-242612
+nodeNum: 3
+cluster: cluster-1.k8s.local
+oidc:
+  issuerURL: https://accounts.google.com
+  clientID: 355259879917-0l3pe8et9dhqc86sstk8jcia803bg0oc.apps.googleusercontent.com
+  usernameClaim: email
